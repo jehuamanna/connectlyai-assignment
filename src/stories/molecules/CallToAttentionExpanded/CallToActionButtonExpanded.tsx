@@ -41,9 +41,7 @@ const useStyles = createUseStyles({
   typographyWrapper: {
     marginLeft: "10px",
   },
-  callToActionButtonExpandedWrapper: {
-    marginRight: "75px",
-  },
+  callToActionButtonExpandedWrapper: {},
 });
 
 /**

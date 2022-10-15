@@ -44,6 +44,22 @@ const useStyles = createUseStyles(
       width: "64px",
       cursor: "pointer",
       "&:focus": { outline: "orange auto 5px" },
+      // "&:hover": { opacity: 0, transition: "opacity .5s ease-in-out" },
+      "&:hover": {
+        animationName: "$bounceIn",
+        animationDuration: "2s",
+      },
+    },
+    "@keyframes bounceIn": {
+      "0%": {
+        transform: "scale(1)",
+      },
+
+      "50%": { transform: "scale(.8)" },
+
+      "100%": {
+        transform: "scale(1)",
+      },
     },
   },
   { theming }

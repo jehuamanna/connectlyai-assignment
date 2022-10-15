@@ -36,6 +36,16 @@ const useStyles = createUseStyles({
   cylinderButtonWrapper: {
     margin: "8px",
     cursor: "pointer",
+    transition: "opacity 2s ease-out",
+    animation: "$fadein 1s ease-in",
+  },
+  "@keyframes fadein": {
+    from: {
+      transform: "translateX(-30px)",
+    },
+    to: {
+      transform: "translateX(0px)",
+    },
   },
   typographyWrapper: {
     marginLeft: "6px",

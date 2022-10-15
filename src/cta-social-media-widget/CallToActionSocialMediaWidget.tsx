@@ -1,10 +1,13 @@
 import React from "react";
 import { createUseStyles } from "react-jss";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { CallToActionOnClickExpanded } from "../stories/molecules/CallToActionOnClickExpanded/CallToActionOnClickExpanded";
 import { CallToActionCloseButton } from "../stories/molecules/CallToAttentionCloseButton/CallToActionCloseButton";
 import { CallToAttentionCollapsed } from "../stories/molecules/CallToAttentionCollapsed/CallToActionButtonCollapsed";
 import { CallToActionButtonExpanded } from "../stories/molecules/CallToAttentionExpanded/CallToActionButtonExpanded";
 import ClickAwayListener from "../utils/ReactClickAwayListener";
+import { useInit } from "./CallToActionSocialMediaWidget.hooks";
 
 const useStyles = createUseStyles({
   ctawrapper: {
@@ -30,6 +33,7 @@ const useStyles = createUseStyles({
 });
 
 const CallToActionSocialMediaWidget = () => {
+  const { state, actions } = useInit();
   const classes = useStyles();
   const [collapsed, setCollapsed] = React.useState(false);
   const [popupOpened, setPopupOpened] = React.useState(false);
@@ -41,8 +45,48 @@ const CallToActionSocialMediaWidget = () => {
       }, 3000);
     })(timer);
   }, []);
+
+  const displayToast = (response: any) => {
+    if (response.status === "success") {
+      toast(response.data, { type: toast.TYPE.SUCCESS });
+    } else {
+      toast(response.error || "Unknown error happened", {
+        type: toast.TYPE.ERROR,
+      });
+    }
+  };
+
+  const onClickHandler = (selectedSocialMedia: string) => {
+    switch (selectedSocialMedia) {
+      case "SMS":
+        actions.fetchSMS(displayToast);
+        break;
+      case "Messenger":
+        actions.fetchMessenger(displayToast);
+        break;
+      case "Instagram":
+        actions.fetchInstagram(displayToast);
+        break;
+      default:
+        break;
+    }
+    setPopupOpened(false);
+  };
+
   return (
     <div className={classes.ctawrapper}>
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
       {popupOpened ? (
         <div className={classes.popupWrapper}>
           <CallToActionCloseButton
@@ -54,12 +98,7 @@ const CallToActionSocialMediaWidget = () => {
           />
           <ClickAwayListener onClickAway={() => setPopupOpened(false)}>
             <div className={classes.callToActionOnClickExpandedWrapper}>
-              <CallToActionOnClickExpanded
-                onClick={(selectedSocialMedia) => {
-                  console.log(selectedSocialMedia);
-                  setPopupOpened(false);
-                }}
-              />
+              <CallToActionOnClickExpanded onClick={onClickHandler} />
             </div>
           </ClickAwayListener>
         </div>

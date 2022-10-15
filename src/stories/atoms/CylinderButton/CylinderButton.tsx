@@ -48,11 +48,26 @@ const useStyles = createUseStyles(
       height: "64px",
       boxShadow: "0px 8px 12px rgba(0, 0, 0, 0.06)",
       borderRadius: "50px",
+      width: "0px",
       "&:focus": { outline: "orange auto 5px" },
+      transition: "all .5s .25s ease-in-out",
     },
     expandedButton: {
       width: "251px",
+      transition: "all .5s .25s ease-in-out",
+      animationName: "$fadein",
+      animationDuration: "1s",
+      animationTimingFunction: "ease-in-out",
     },
+    "@keyframes fadein": {
+      from: {
+        transform: "translateX(30px)",
+      },
+      to: {
+        transform: "translateX(0px)",
+      },
+    },
+
     popupButton: {
       width: "180px",
     },
