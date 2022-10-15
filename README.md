@@ -1,5 +1,11 @@
 # Call To Action With Social Media Buttons
 
+[![](https://img.shields.io/badge/react-v18.2.0-brightgreen)](https://github.com/facebook/react/blob/main/CHANGELOG.md#1820-june-14-2022)
+[![](https://img.shields.io/badge/axios-v1.1.2-orange)](https://www.npmjs.com/package/axios/v/1.1.2)
+[![](https://img.shields.io/badge/reactjss-v10.9.2-blue)](https://www.npmjs.com/package/react-jss)
+[![](https://img.shields.io/badge/reacttoastify-v9.0.8-yellow)](https://www.npmjs.com/package/react-toastify)
+[![](https://img.shields.io/badge/storybook-v6.5.12-brightgreen)](https://www.npmjs.com/package/@storybook/react)
+
 ## Demo
 
 [Click here](https://jehuamanna.github.io/connectlyai-assignment/) for the deployed version.
@@ -54,6 +60,12 @@ Architectural points considered while developing the application.
 - Strongly Static Typing.
 - Component Driven Design.
 - Testability.
+
+## External Libraries used
+
+- [react-jss](https://www.npmjs.com/package/react-jss)
+- [axios](https://www.npmjs.com/package/axios)
+- [react-toastify](https://www.npmjs.com/package/react-toastify)
 
 ## Improvements
 
