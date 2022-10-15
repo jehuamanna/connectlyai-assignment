@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/connectlyai-assignment/static/css/main.4c76e50d.css",
+    "main.js": "/connectlyai-assignment/static/js/main.df3825c4.js",
+    "static/media/instagram icon.svg": "/connectlyai-assignment/static/media/instagram icon.2c7d56b11e34e4b197a388d0f6accf8d.svg",
+    "static/media/sms icon.svg": "/connectlyai-assignment/static/media/sms icon.2ca67056e945de0c1f1480d309080695.svg",
+    "static/media/messenger icon.svg": "/connectlyai-assignment/static/media/messenger icon.daff0c37305bb461ba1524f51a27aa18.svg",
+    "index.html": "/connectlyai-assignment/index.html",
+    "static/media/cta collapsed.svg": "/connectlyai-assignment/static/media/cta collapsed.60588dcc8b4f27812e81486c3d8dba7b.svg",
+    "static/media/close icon.svg": "/connectlyai-assignment/static/media/close icon.fe163b37ffe7b0d6bb92381d11653f67.svg",
+    "main.4c76e50d.css.map": "/connectlyai-assignment/static/css/main.4c76e50d.css.map",
+    "main.df3825c4.js.map": "/connectlyai-assignment/static/js/main.df3825c4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4c76e50d.css",
+    "static/js/main.df3825c4.js"
+  ]
+}
