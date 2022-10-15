@@ -48,6 +48,7 @@ const CallToActionSocialMediaWidget = () => {
         setCollapsed(true);
       }, 3000);
     })(timer);
+    return () => clearTimeout(timer);
   }, []);
 
   const displayToast = (response: IDispalyToastResponse<string>) => {
