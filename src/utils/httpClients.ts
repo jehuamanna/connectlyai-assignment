@@ -4,6 +4,10 @@ import axios, {
   AxiosRequestConfig,
   AxiosResponse,
 } from "axios";
+import {
+  IDispalyToastResponse,
+  IMessage,
+} from "../cta-social-media-widget/CallToActionSocialMediaWidget.models";
 
 export interface HttpRequest extends AxiosRequestConfig {}
 export interface HttpResponse extends AxiosResponse {}
@@ -30,20 +34,21 @@ httpClient.interceptors.response.use(handleResponse, handleResponseError);
 
 interface IParams {
   url: string;
-  cb: (data: any) => void;
+  cb: (data: IDispalyToastResponse<string>) => void;
 }
 
-export const fetchServiceWrapper = async <T>(params: IParams) => {
-  const responseData: HttpResponseData<T> = {} as HttpResponseData<T>;
+export const fetchServiceWrapper = async (params: IParams) => {
+  const responseData: HttpResponseData<IMessage> =
+    {} as HttpResponseData<IMessage>;
   // We can initialize logger here;
   const { url, cb } = params;
   try {
     const response = await httpClient.get(url);
     if (response.status === 200) {
       responseData.data = response.data;
-      cb({ data: response.data.success, status: "success" });
+      cb({ data: responseData.data.success, status: "success" });
     } else {
-      cb({ error: response.data.success, status: "failure" });
+      cb({ error: responseData.data.success, status: "failure" });
 
       responseData.errors = ["Error in loading data"];
     }

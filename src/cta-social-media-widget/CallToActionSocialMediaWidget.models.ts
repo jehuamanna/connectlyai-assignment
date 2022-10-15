@@ -11,10 +11,16 @@ export type ICallToActionSocialMediaWidgetDispatchActions =
       data: IInstagram;
     };
 
-interface IMessage {
+export interface IMessage {
   success: string;
 }
 export interface ISms extends IMessage {}
 export interface IMessenger extends IMessage {}
 export interface IInstagram extends IMessage {}
 export interface IState {}
+
+export interface IDispalyToastResponse<T> {
+  status: string;
+  data?: T;
+  error?: string;
+}

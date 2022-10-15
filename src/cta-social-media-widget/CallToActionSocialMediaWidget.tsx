@@ -8,6 +8,10 @@ import { CallToAttentionCollapsed } from "../stories/molecules/CallToAttentionCo
 import { CallToActionButtonExpanded } from "../stories/molecules/CallToAttentionExpanded/CallToActionButtonExpanded";
 import ClickAwayListener from "../utils/ReactClickAwayListener";
 import { useInit } from "./CallToActionSocialMediaWidget.hooks";
+import {
+  IDispalyToastResponse,
+  IMessage,
+} from "./CallToActionSocialMediaWidget.models";
 
 const useStyles = createUseStyles({
   ctawrapper: {
@@ -46,7 +50,7 @@ const CallToActionSocialMediaWidget = () => {
     })(timer);
   }, []);
 
-  const displayToast = (response: any) => {
+  const displayToast = (response: IDispalyToastResponse<string>) => {
     if (response.status === "success") {
       toast(response.data, { type: toast.TYPE.SUCCESS });
     } else {
