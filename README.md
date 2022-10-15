@@ -2,7 +2,7 @@
 
 ## Demo
 
-[Click here](https://jehuamanna.github.io/connectlyai-assignment/) for the deployed verion
+[Click here](https://jehuamanna.github.io/connectlyai-assignment/) for the deployed version.
 
 ## Install and Run
 
