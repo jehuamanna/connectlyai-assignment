@@ -1,6 +1,8 @@
 # Call To Action With Social Media Buttons
 
-## Intro
+## Demo
+
+[Click here](https://jehuamanna.github.io/connectlyai-assignment/) for the deployed verion
 
 ## Install and Run
 
