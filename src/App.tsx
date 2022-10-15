@@ -1,24 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import {} from "react-dom";
+import { createUseStyles } from "react-jss";
+import CallToActionSocialMediaWidget from "./cta-social-media-widget/CallToActionSocialMediaWidget";
+
+const useStyles = createUseStyles({
+  header: {
+    textAlign: "center",
+    backgroundColor: "#282c34",
+    minHeight: "200vh",
+    position: "relative",
+    color: "white",
+  },
+});
 
 function App() {
+  const classes = useStyles();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={classes.header}>
+      <CallToActionSocialMediaWidget />
     </div>
   );
 }
