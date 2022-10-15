@@ -8,6 +8,7 @@ module.exports = {
     "@storybook/preset-create-react-app",
     "@storybook/testing-library",
     "@storybook/addon-a11y",
+    "@storybook/addon-jest",
   ],
   framework: "@storybook/react",
   core: {

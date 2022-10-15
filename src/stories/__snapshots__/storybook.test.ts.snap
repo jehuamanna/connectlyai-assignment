@@ -1,0 +1,278 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Atoms/CircleButton Cicle Button Example 1`] = `
+<button
+  aria-label="circle-button-"
+  className="button-0-2-1 button-d0-0-2-2"
+  onClick={[Function]}
+  title="circle-button"
+/>
+`;
+
+exports[`Storyshots Atoms/CylinderButton Expanded 1`] = `
+<button
+  className="button-0-2-3 button-d0-0-2-6 expandedButton-0-2-4"
+  id="expanded-button"
+  title="expanded-button"
+/>
+`;
+
+exports[`Storyshots Atoms/CylinderButton Pop Up 1`] = `
+<button
+  className="button-0-2-3 button-d1-0-2-7 popupButton-0-2-5"
+  id="popup-button"
+  title="popup-button"
+/>
+`;
+
+exports[`Storyshots Atoms/Icon CTA Collapsed 1`] = `
+<img
+  alt="cta-collapsed icon"
+  src="cta collapsed.svg"
+/>
+`;
+
+exports[`Storyshots Atoms/Icon Close 1`] = `
+<img
+  alt="close icon"
+  src="close icon.svg"
+/>
+`;
+
+exports[`Storyshots Atoms/Icon Instagram 1`] = `
+<img
+  alt="instagram icon"
+  src="instagram icon.svg"
+/>
+`;
+
+exports[`Storyshots Atoms/Icon Messenger 1`] = `
+<img
+  alt="messenger icon"
+  src="messenger icon.svg"
+/>
+`;
+
+exports[`Storyshots Atoms/Icon SMS 1`] = `
+<img
+  alt="sms icon"
+  src="sms icon.svg"
+/>
+`;
+
+exports[`Storyshots Atoms/Typography Collapsed 1`] = `
+<div
+  className="typographyBase-0-2-8 typographyBase-d0-0-2-11 typographyNormalText-0-2-9 typographyNormalText-d1-0-2-12"
+>
+  Instagram
+</div>
+`;
+
+exports[`Storyshots Atoms/Typography Expanded 1`] = `
+<div
+  className="typographyBase-0-2-8 typographyBase-d3-0-2-14 typographyNomalBoldText-0-2-10 typographyNomalBoldText-d5-0-2-16"
+>
+  Message us
+</div>
+`;
+
+exports[`Storyshots Molecules/CallToAttentionCloseButton Expanded 1`] = `
+<div
+  className="callToActionCloseButtonWrapper-0-2-34"
+  onClick={[Function]}
+>
+  <button
+    className="button-0-2-1 button-d1-0-2-36"
+  >
+    <div
+      className="iconWrapper-0-2-35"
+    >
+      <img
+        alt="close icon"
+        src="close icon.svg"
+      />
+    </div>
+  </button>
+</div>
+`;
+
+exports[`Storyshots Molecules/CallToAttentionCollapsed Expanded 1`] = `
+<div
+  className="callToAttentionCollapsedWrapper-0-2-37"
+  onClick={[Function]}
+>
+  <div
+    className="callToActionButtonExpandedWrapper-0-2-39"
+  >
+    <div
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+    >
+      <button
+        aria-label="Social Media Buttons"
+        className="button-0-2-1 button-d2-0-2-40"
+        id="social-media-button"
+        title="Social Media Button"
+      >
+        <div
+          className="iconWrapper-0-2-38"
+        >
+          <img
+            alt="cta-collapsed icon"
+            src="cta collapsed.svg"
+          />
+        </div>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules/CallToAttentionExpanded Expanded 1`] = `
+<div
+  className="callToActionButtonExpandedWrapper-0-2-45"
+>
+  <button
+    aria-label="Expand To Social Media Buttons"
+    className="button-0-2-3 button-d5-0-2-46 expandedButton-0-2-4"
+    id="expand-to-social-media-button"
+    title="Expand To Social Media Buttons"
+  >
+    <div
+      className="flexWrapper-0-2-41"
+    >
+      <div
+        className="iconsWrapper-0-2-43"
+      >
+        <div
+          className="iconWrapper-0-2-42"
+        >
+          <img
+            alt="sms icon"
+            src="sms icon.svg"
+          />
+        </div>
+        <div
+          className="iconWrapper-0-2-42"
+        >
+          <img
+            alt="messenger icon"
+            src="messenger icon.svg"
+          />
+        </div>
+        <div
+          className="iconWrapper-0-2-42"
+        >
+          <img
+            alt="instagram icon"
+            src="instagram icon.svg"
+          />
+        </div>
+      </div>
+      <div
+        className="typographyWrapper-0-2-44"
+      >
+        <div
+          className="typographyBase-0-2-8 typographyBase-d15-0-2-47 typographyNomalBoldText-0-2-10 typographyNomalBoldText-d17-0-2-49"
+        >
+          Message us
+        </div>
+      </div>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`Storyshots Molecules/CallToAttentionOnClickExpanded Expanded 1`] = `
+<div
+  className="callToActionOnClickExpandedWrapper-0-2-19"
+>
+  <div
+    className="cylinderButtonWrapper-0-2-20"
+    onClick={[Function]}
+  >
+    <button
+      aria-label="sms"
+      className="button-0-2-3 button-d2-0-2-22 popupButton-0-2-5"
+      id="sms"
+      title="sms"
+    >
+      <div
+        className="iconTypographyWrapper-0-2-17"
+      >
+        <img
+          alt="sms icon"
+          src="sms icon.svg"
+        />
+        <div
+          className="typographyWrapper-0-2-21"
+        >
+          <div
+            className="typographyBase-0-2-8 typographyBase-d6-0-2-23 typographyNormalText-0-2-9 typographyNormalText-d7-0-2-24"
+          >
+            SMS
+          </div>
+        </div>
+      </div>
+    </button>
+  </div>
+  <div
+    className="cylinderButtonWrapper-0-2-20"
+    onClick={[Function]}
+  >
+    <button
+      aria-label="messenger"
+      className="button-0-2-3 button-d3-0-2-26 popupButton-0-2-5"
+      id="messenger"
+      title="messenger"
+    >
+      <div
+        className="iconTypographyWrapper-0-2-17"
+      >
+        <img
+          alt="messenger icon"
+          src="messenger icon.svg"
+        />
+        <div
+          className="typographyWrapper-0-2-21"
+        >
+          <div
+            className="typographyBase-0-2-8 typographyBase-d9-0-2-27 typographyNormalText-0-2-9 typographyNormalText-d10-0-2-28"
+          >
+            Messenger
+          </div>
+        </div>
+      </div>
+    </button>
+  </div>
+  <div
+    className="cylinderButtonWrapper-0-2-20"
+    onClick={[Function]}
+  >
+    <button
+      aria-label="instagram"
+      className="button-0-2-3 button-d4-0-2-30 popupButton-0-2-5"
+      id="instagram"
+      title="instagram"
+    >
+      <div
+        className="iconTypographyWrapper-0-2-17"
+      >
+        <img
+          alt="instagram icon"
+          src="instagram icon.svg"
+        />
+        <div
+          className="typographyWrapper-0-2-21"
+        >
+          <div
+            className="typographyBase-0-2-8 typographyBase-d12-0-2-31 typographyNormalText-0-2-9 typographyNormalText-d13-0-2-32"
+          >
+            Instagram
+          </div>
+        </div>
+      </div>
+    </button>
+  </div>
+</div>
+`;
